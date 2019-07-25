@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>All Meme</title>
+    <link type="text/css" rel="stylesheet" href="/styles/results.css">
+  </head>
+  <body>
+    <h1>Memes</h1>
+    <!--The image needs to be rendered for each new meme
+    so set the div's background-image property inline -->
+    {% for each_meme in memes %}
+      <div class="meme-div" style="background-image:url({{each_meme.get_meme_url()}});">
+        <h2 class="line1 title">{{each_meme.first_line}}</h2>
+        <h2 class="line2 title">{{each_meme.second_line}}</h2>
+      </div>
+    {% endfor %}
+  </body>
+</html>
