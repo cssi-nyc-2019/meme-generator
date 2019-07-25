@@ -12,16 +12,6 @@ the_jinja_env = jinja2.Environment(
   autoescape=True)
 
 # other functions should go above the handlers or in a separate file
-def get_meme_url(meme_choice):
-    if meme_choice == 'old-class':
-        url = 'https://upload.wikimedia.org/wikipedia/commons/4/47/StateLibQld_1_100348.jpg'
-    elif meme_choice == 'college-grad':
-        url = 'https://upload.wikimedia.org/wikipedia/commons/c/ca/LinusPaulingGraduation1922.jpg'
-    elif meme_choice == 'thinking-ape':
-        url = 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Deep_in_thought.jpg'
-    elif meme_choice == 'coding':
-        url = 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Typing_computer_screen_reflection.jpg'
-    return url
 
 
 # the handler section
